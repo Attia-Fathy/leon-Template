@@ -1,0 +1,406 @@
+:root {
+    --main-color: #10cab7;
+    --color-1: #c8c6c63f;
+    --color-2: #575757cc;
+    --font-color-1: #4d4c4c;
+    --font-color-2: #1f2021;
+    --background-color-1: #ffffff;
+    --background-color-2: #e6e6e6;
+}
+
+* {
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+body::first-letter {
+    text-transform: capitalize;
+}
+
+/* container */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1158px;
+    }
+}
+
+/* End container */
+
+/* menu */
+
+menu {
+    background-color: #2c4755;
+    position: absolute;
+    right: 0.5%;
+    top: 3%;
+    height: 700px;
+    width: 400px;
+    z-index: 10;
+}
+
+
+menu h4,
+menu p {
+    color: #637988;
+}
+
+menu h4,
+menu a {
+    font-size: 21px;
+    letter-spacing: -1px;
+    line-height: 35px;
+    font-weight: 400;
+    margin-left: 12%;
+    margin-bottom: 5%;
+}
+
+menu p {
+    font-size: 15px;
+    letter-spacing: -1px;
+    line-height: 24px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 7%;
+    left: 13%;
+}
+
+.link a {
+    font-size: 29px;
+}
+
+menu button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    margin-top: 10%;
+    margin-left: -4%;
+    margin-bottom: 3%;
+}
+
+menu button i {
+    font-size: 25px;
+    color: var(--background-color-1);
+}
+
+menu ul {
+    padding: 0;
+}
+
+menu li {
+    list-style: none;
+}
+
+menu li a {
+    color: var(--background-color-1);
+    text-decoration: none;
+}
+
+menu li a:hover {
+    color: #00E1FF;
+}
+
+/* Animation */
+.show-menu {
+    animation-name: menu-show;
+    animation-duration: 0.5s;
+}
+
+.hiden-menu {
+    animation-name: menu-hiden;
+    animation-duration: 0.5s;
+    right: -1000px;
+}
+
+.color {
+    color: var(--main-color);
+}
+
+.none-menu {
+    display: none;
+}
+
+.block-menu {
+    display: block;
+}
+
+@keyframes menu-show {
+    from {
+        right: -1000px;
+    }
+
+    to {
+        right: 0.5%;
+    }
+}
+
+@keyframes menu-hiden {
+    from {
+        right: 0.5%;
+    }
+
+    to {
+        right: -1000px;
+    }
+}
+
+/* End Animation */
+
+@media (max-width: 500px) {
+    menu {
+        width: 100%;
+    }
+
+}
+
+/* End Menu */
+
+/* nav */
+nav {
+    padding: 25px;
+}
+
+nav img {
+    width: 100px;
+    margin: 1%;
+}
+
+nav button {
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    margin: 1%;
+    cursor: pointer;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* End Nav */
+
+/* Header */
+header {
+    height: 90vh;
+    background-image: url(../imgs/1261728.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+header h1 {
+    font-size: 55px;
+    letter-spacing: -3px;
+    line-height: 67px;
+    color: var(--main-color);
+    font-weight: 800;
+    text-align: center;
+    margin-top: 15%;
+}
+
+header p {
+    font-size: 20px;
+    letter-spacing: -1px;
+    line-height: 32px;
+    color: #2c4755;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* End Header */
+
+/* footer */
+
+.upper {
+    background-color: var(--background-color-2);
+    padding-bottom: 15px;
+}
+
+.contact-me p {
+    font-size: 55px;
+    letter-spacing: -3px;
+    line-height: 67px;
+    color: #2c4755;
+    font-weight: 800;
+    margin-left: 10%;
+}
+
+.contact-me>a {
+    font-size: 50px;
+    letter-spacing: -2px;
+    line-height: 67px;
+    color: #10cab7;
+    font-weight: 800;
+    text-decoration: none;
+    margin-left: 13%;
+}
+
+.contact-me>a:hover {
+    color: #00E1FF;
+}
+
+@media (max-width: 767px) {
+    .contact-me p {
+        font-size: 20px;
+        letter-spacing: -1px;
+    }
+
+    .contact-me>a {
+        font-size: 24px;
+    }
+}
+
+.social {
+    margin-top: 1.5%;
+}
+
+.social p {
+    font-size: 15px;
+    letter-spacing: -1px;
+    line-height: 27px;
+    color: #334752;
+    font-weight: 400;
+    margin-left: 20%;
+    display: inline;
+}
+
+.social ul {
+    display: inline;
+    padding-left: 10px;
+}
+
+.social a {
+    color: #334752;
+    font-size: 15px;
+    margin-left: 1%;
+}
+
+.social a:hover {
+    color: #00E1FF;
+}
+
+.bottom {
+    background-color: #2c4755;
+    padding: 15px;
+}
+
+.bottom p {
+    text-align: center;
+    font-size: 15px;
+    line-height: 27px;
+    color: #ffffff;
+    font-weight: 800;
+    text-transform: capitalize;
+    margin-top: 0.5%;
+}
+
+.bottom span {
+    color: var(--main-color);
+}
+
+/* End Footer */
+
+/* Local Freamwork */
+
+/* Special Header */
+.special-header {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    margin-bottom: 5%;
+}
+
+.special-header h2 {
+    line-height: 195px;
+    margin-bottom: -80px;
+    color: #c8c6c63f;
+    font-weight: 800;
+    font-size: 65px;
+    letter-spacing: -3px;
+    margin-bottom: -90px;
+}
+
+.special-header p {
+    line-height: 35px;
+    color: #575757cc;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: -1px;
+    margin-top: -90px;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .special-header h2 {
+        font-size: 108px;
+        letter-spacing: -3px;
+        margin-bottom: -80px;
+    }
+
+    .special-header p {
+        font-size: 18px;
+        letter-spacing: -1px;
+        margin-top: -70px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .special-header h2 {
+        font-size: 108px;
+        letter-spacing: -8px;
+        margin-bottom: -80px;
+    }
+
+    .special-header p {
+        font-size: 18px;
+        letter-spacing: -1px;
+        margin-top: -80px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .special-header h2 {
+        font-size: 162px;
+        letter-spacing: -8px;
+        margin-bottom: -60px;
+    }
+
+    .special-header p {
+        font-size: 25px;
+        letter-spacing: -1px;
+        margin-top: -60px;
+    }
+}
+
+/* End Special Header */
+
+/* End Local Freamwork */

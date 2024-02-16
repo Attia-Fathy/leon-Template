@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leon timplate</title>
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style-main.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- normalize css -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,800;1,400;1,800&display=swap"
+        rel="stylesheet">
+    <!-- index css -->
+    <link rel="stylesheet" href="css/Leon.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <img src="imgs/logo.png" alt="logo" />
+            <button onclick="show()"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <menu id="men" class="hiden-menu none-menu">
+        <button onclick="fullHiden()"><i class="fa-solid fa-xmark"></i></button>
+        <div class="link">
+            <h4>menu</h4>
+            <ul>
+                <li><a onclick="closeMenu()" class="color" href="#">Home</a></li>
+                <li><a onclick="closeMenu()" href="#services">services</a></li>
+                <li><a onclick="closeMenu()" href="#portfolio">portfolio</a></li>
+                <li><a onclick="closeMenu()" href="#about">about</a></li>
+                <li><a onclick="closeMenu()" href="work-info.html">Work info</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>get in touch</h4>
+            <ul>
+                <li><a onclick="closeMenu()" href="#contact-me">contact me</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>get social</h4>
+            <ul>
+                <li>
+                    <a onclick="closeMenu()" href="http://" target="_blank" rel="noopener noreferrer">behance</a>
+                </li>
+                <li>
+                    <a onclick="closeMenu()" href="http://" target="_blank" rel="noopener noreferrer">dribble</a>
+                </li>
+                <li>
+                    <a onclick="closeMenu()" href="http://" target="_blank" rel="noopener noreferrer">twitter</a>
+                </li>
+            </ul>
+        </div>
+        <p>&copy;leon.com 2019</p>
+    </menu>
+
+    <header>
+        <div class="container">
+            <h1>hello there!</h1>
+            <p>we are leon - super creative & minimal <br>Agency web template</p>
+        </div>
+    </header>
+
+    <section class="works">
+        <div class="container">
+            <div class="work">
+                <div class="icon1">
+                    <i class="fa-solid fa-lightbulb"></i>
+                </div>
+                <h3>tell us your idea</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut lab
+                </p>
+            </div>
+            <div class="work">
+                <div class="icon1">
+                    <i class="fa-solid fa-circle"></i>
+                    <i class="fa-solid fa-circle special-icon"></i>
+                    <i class="fa-solid fa-flask"></i>
+                </div>
+                <h3>we will do all the work</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut lab
+                </p>
+            </div>
+            <div class="work">
+                <div class="icon1">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <h3>your product worldwlde</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut lab
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="services" id="services">
+        <div class="container">
+            <div class="special-header">
+                <h2>services</h2>
+                <p>Don't be busy, be productive</p>
+            </div>
+            <div class="flex-1">
+
+                <div class="ser-fl">
+                    <div class="service">
+                        <div class="icon2">
+                            <i class="fa-solid fa-print"></i>
+                        </div>
+                        <div class="text1">
+                            <h3>Graphic Design</h3>
+                            <p>
+                                Graphic design is the process of visual communication and
+                                problem-solving using one or more of typography,photography and
+                                illustration.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="icon2">
+                            <i class="fa-solid fa-window-maximize"></i>
+                        </div>
+                        <div class="text1">
+                            <h3>Web Design</h3>
+                            <p>
+                                Web design encompasses many different skills and disciplines in the
+                                production and maintenance of websites.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="icon2">
+                            <i class="fa-solid fa-message"></i>
+                        </div>
+                        <div class="text1">
+                            <h3>UI & UX</h3>
+                            <p>
+                                Process of enhancing user satisfaction with a product by improving the
+                                usability, accessibility, and pleasure provided in the interaction.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="icon2">
+                            <i class="fa-solid fa-display"></i>
+                        </div>
+                        <div class="text1">
+                            <h3>Web Development</h3>
+                            <p>
+                                Web development is a broad term for the work involved in developing a
+                                web site for the Internet or an intranet.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-img-1">
+                    <img src="imgs/1366919.jpg" alt="service-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="special-header">
+                <h2>portfolio</h2>
+                <p>if you do it right, it will last forever.</p>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="por-im"><img src="imgs/1366919.jpg" alt="por-im-1"></div>
+                    <h3>Project Here</h3>
+                    <p>
+                        My creative ability is very difficult to measure because it can
+                        manifest in so many surprising and.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="por-im"><img src="imgs/1366919.jpg" alt="por-im-2"></div>
+                    <h3>Project Here</h3>
+                    <p>
+                        My creative ability is very difficult to measure because it can
+                        manifest in so many surprising and.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="por-im"><img src="imgs/1366919.jpg" alt="por-im-3"></div>
+                    <h3>Project Here</h3>
+                    <p>
+                        My creative ability is very difficult to measure because it can
+                        manifest in so many surprising and.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about" id="about">
+        <div class="container">
+            <dir class="special-header">
+                <h2>about</h2>
+                <p>less is more work</p>
+            </dir>
+            <div class="flex-2">
+                <div class="box-img-2">
+                    <img src="imgs/1366919.jpg" alt="about-image">
+                </div>
+                <div class="info">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqui
+                    </p>
+                    <hr />
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="upper">
+            <div class="container">
+                <div class="special-header">
+                    <h2>contact</h2>
+                    <p>we are born to create</p>
+                </div>
+                <div class="contact-me" id="contact-me">
+                    <p>feel free to drop us a line at:</p>
+                    <a href="mailto:leonagency@mail.com">leonagency@mail.com</a>
+                    <div class="social">
+                        <p>find us on social networks:</p>
+                        <ul>
+                            <a href="https://www.google.com/" target="_blank"><i class="fa-brands fa-google"></i></a>
+                            <a href="https://dribbble.com/" target="_blank"><i class="fa-brands fa-dribbble"></i></a>
+                            <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="container">
+                <p>&copy; 2019-<span>leaon</span>,all right reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script src="button.js"></script>
+</body>
+
+</html>

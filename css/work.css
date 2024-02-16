@@ -1,0 +1,253 @@
+/* Hero */
+.hero {
+    background-color: #e6e6e6;
+    height: 60vh;
+    position: relative;
+}
+
+.hero .container div {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+.hero p {
+    font-size: 20px;
+    letter-spacing: -1px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #575757;
+    margin-left: 3%;
+}
+
+.hero h1 {
+    font-size: 55px;
+    letter-spacing: -3px;
+    line-height: 67px;
+    font-weight: 800;
+    color: var(--main-color);
+    margin: 0px 0 3% 3%;
+}
+
+@media (max-width: 767px) {
+    .hero {
+        height: 40vh;
+    }
+
+    .hero h1 {
+        font-size: 22px;
+        letter-spacing: -1px;
+        line-height: 35px;
+    }
+
+    .hero p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .hero {
+        height: 40vh;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+        letter-spacing: -2px;
+        line-height: 50px;
+    }
+
+    .hero p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
+
+/* End Hero */
+
+/* Info */
+.info {
+    margin-bottom: 10%;
+    margin-top: 5%;
+    padding: 15px;
+}
+
+.info .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info article {
+    width: 50%;
+}
+
+.info article :first-child {
+    font-size: 20px;
+    line-height: 40px;
+    color: #334752;
+    font-weight: 800;
+}
+
+.info article :last-child {
+    font-size: 15px;
+    letter-spacing: -1px;
+    line-height: 32px;
+    color: #575757;
+    font-weight: 400;
+}
+
+.info hr {
+    background-color: var(--main-color);
+    height: 3px;
+    width: 60%;
+    margin: 6% 0 3% 0;
+    border: none;
+}
+
+.info aside {
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: 2.5px 4.33px 5px 4px #262f2e1a;
+    border-radius: 1%;
+}
+
+.info aside div {
+    margin-left: 20%;
+}
+
+.info h2 {
+    font-size: 15px;
+    line-height: 40px;
+    color: #334752;
+    font-weight: 800;
+}
+
+.info p {
+    font-size: 15px;
+    letter-spacing: -1px;
+    line-height: 32px;
+    color: #575757;
+    font-weight: 400;
+}
+
+@media (max-width: 767px) {
+    .info .container {
+        flex-wrap: wrap;
+    }
+
+    .info article {
+        width: 100%;
+    }
+
+    .info aside {
+        margin-top: 10%;
+        margin-bottom: 10%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        box-shadow: 2.5px 4.33px 5px 4px #262f2e1a;
+        border-radius: 1%;
+    }
+}
+
+/* End Info */
+
+/* Photo1 */
+.photo1 {
+    background-color: var(--color-2);
+    width: 70%;
+    height: 60vh;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.photo1 img,
+.photo2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* End Photo1 */
+
+/* Post */
+.post {
+    margin-bottom: 5%;
+}
+
+.post .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pr-im {
+    line-height: 32px;
+    font-weight: 400;
+    font-size: 15px;
+    width: 45%;
+    color: #575757;
+    letter-spacing: -1px;
+    margin-top: 8%;
+}
+
+.photo2 {
+    background-color: var(--color-2);
+    height: 40vh;
+    width: 45%;
+}
+
+.special {
+    display: none;
+}
+
+@media (max-width: 767px) {
+
+    .photo1 {
+        background-color: var(--color-2);
+        width: 80%;
+        height: 40vh;
+        margin-bottom: 5%;
+    }
+
+    .post .container {
+        flex-wrap: wrap;
+    }
+
+    .pr-im {
+        line-height: 32px;
+        font-weight: 400;
+        font-size: 19px;
+        width: 100%;
+        color: #575757;
+        /* margin-bottom: 3%; */
+    }
+
+    .photo2 {
+        background-color: var(--color-2);
+        height: 30vh;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .special {
+        display: block;
+        margin-bottom: 5%;
+        background-color: var(--background-color-2);
+        border: none;
+        width: 70%;
+        height: 2px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+/* End Post */

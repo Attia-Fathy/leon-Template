@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leon timplate|Work info</title>
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style-main.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- normalize css -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,800;1,400;1,800&display=swap"
+        rel="stylesheet">
+    <!-- work css -->
+    <link rel="stylesheet" href="css/work.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <img src="imgs/logo.png" alt="logo" />
+            <button onclick="show()"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <menu id="men" class="hiden-menu none-menu">
+        <button onclick="fullHiden()"><i class="fa-solid fa-xmark"></i></button>
+        <div class="link">
+            <h4>menu</h4>
+            <ul>
+                <li><a onclick="closeMenu()" href="index.html">Home</a></li>
+                <li><a onclick="closeMenu()" href="index.html#services">services</a></li>
+                <li><a onclick="closeMenu()" href="index.html#portfolio">portfolio</a></li>
+                <li><a onclick="closeMenu()" href="index.html#about">about</a></li>
+                <li><a onclick="closeMenu()" class="color" href="#">Work info</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>get in touch</h4>
+            <ul>
+                <li><a href="#contact-me">contact me</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>get social</h4>
+            <ul>
+                <li>
+                    <a onclick="closeMenu()" href="http://" target="_blank" rel="noopener noreferrer">behance</a>
+                </li>
+                <li>
+                    <a onclick="closeMenu()" href="http://" target="_blank" rel="noopener noreferrer">dribble</a>
+                </li>
+                <li>
+                    <a onclick="closeMenu()" href="http://" target="_blank" rel="noopener noreferrer">twitter</a>
+                </li>
+            </ul>
+        </div>
+        <p>&copy;leon.com 2019</p>
+    </menu>
+
+    <section class="hero">
+        <div class="container">
+            <div>
+                <p>branding / ideas</p>
+                <h1>branding stationary project</h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="info">
+        <div class="container">
+            <article>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliqui</p>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliqu</p>
+            </article>
+            <aside>
+                <div>
+                    <h2>category</h2>
+                    <p>branding/ideas</p>
+                </div>
+                <div>
+                    <h2>autor</h2>
+                    <p>Graphic</p>
+                </div>
+                <div>
+                    <h2>year</h2>
+                    <p>2019</p>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="photo1">
+
+            <img src="imgs/65645456.jpg" alt="photo-1">
+        </section>
+    </div>
+
+    <section class="post">
+        <div class="container">
+            <p class="pr-im">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliqu
+            </p>
+            <div class="photo2">
+                <img src="imgs/9615145.jpg" alt="photo-2">
+            </div>
+        </div>
+    </section>
+
+    <hr class="special">
+
+    <section class="post">
+        <div class="container">
+            <div class="photo2">
+                <img src="imgs/9615145.jpg" alt="photo-2">
+            </div>
+            <p class="pr-im">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliqu
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="upper">
+            <div class="container">
+                <div class="special-header">
+                    <h2>contact</h2>
+                    <p>we are born to create</p>
+                </div>
+                <div class="contact-me" id="contact-me">
+                    <p>feel free to drop us a line at:</p>
+                    <a href="mailto:leonagency@mail.com">leonagency@mail.com</a>
+                    <div class="social">
+                        <p>find us on social networks:</p>
+                        <ul>
+                            <a href="https://www.google.com/" target="_blank"><i class="fa-brands fa-google"></i></a>
+                            <a href="https://dribbble.com/" target="_blank"><i class="fa-brands fa-dribbble"></i></a>
+                            <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="container">
+                <p>&copy; 2019-<span>leaon</span>,all right reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script src="button.js"></script>
+</body>
+
+</html>
